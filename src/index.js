@@ -11,7 +11,7 @@ import "./functionBased/App.css"
 const root = ReactDom.createRoot(document.getElementById("root"));
 root.render(
     <React.StrictMode>
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
             <TodoContainer />
         </Router>
     </React.StrictMode>
